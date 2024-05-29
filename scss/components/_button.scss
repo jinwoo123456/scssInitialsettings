@@ -1,0 +1,13 @@
+
+.btn{
+  @include buttonColor("red");
+  @include buttonSize("sm");
+}
+
+
+
+
+// .btn {
+//   @include button("white");
+//   @include button("gray");
+// }

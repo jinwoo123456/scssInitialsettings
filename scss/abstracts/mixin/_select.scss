@@ -1,0 +1,8 @@
+@mixin select($variable) {
+  @include background(
+    map-get($variable, imageName),
+    right map-get($variable, positionRight) center
+  );
+  appearance: none;
+  padding: 0 map-get($variable, paddingRight) 0 map-get($variable, paddingLeft);
+}

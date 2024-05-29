@@ -1,0 +1,52 @@
+$radioType1: (
+  //key:value;
+  className: ".radio",
+  radioOffImage: "radio_off.svg",
+  radioOnImage: "radio_on.svg",
+  height: 19px,
+  paddingLeft: 21px,
+  radioOffTextColor: #969696,
+  radioOnTextColor: #3f3f3f,
+  fontSize: 13px
+);
+
+%input {
+  width: var(--w, auto);
+  height: 40px;
+  border: 1px solid #dee1e4;
+  background: #fff;
+  box-sizing: border-box;
+}
+
+$select: (
+  imageName: "select.svg",
+  positionRight: 18px,
+  paddingLeft: 18px,
+  paddingRight: 30px,
+);
+
+$checkType1: (
+  //key:value;
+  className: ".checkbox",
+  radioOffImage: "check_off.svg",
+  radioOnImage: "check_on.svg",
+  height: 22px,
+  paddingLeft: 28px,
+  radioOffTextColor: #000,
+  radioOnTextColor: #000,
+  fontSize: 16px
+);
+
+select {
+  @extend %input;
+  @include select($select);
+}
+
+input {
+  &:not([type="radio"], [type="checkbox"]) {
+    @extend %input;
+  }
+}
+
+@include radio($radioType1);
+@include radio($checkType1);

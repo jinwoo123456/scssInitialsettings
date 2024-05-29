@@ -1,0 +1,19 @@
+//ctrl+p 누르고 파일 탐색
+//npm i -d sass //sass 연결
+// npm run dev //scss 연결
+
+@import "./abstracts/variables";
+@import "./abstracts/mixin/background";
+@import "./abstracts/mixin/responsive";
+@import "./abstracts/mixin/button";
+@import "./abstracts/mixin/radio";
+@import "./abstracts/mixin/select";
+@import "./abstracts/mixin/position";
+@import "./abstracts/mixin/avatar";
+@import "./base/reset";
+@import "./components/typography";
+@import "./components/form";
+@import "./components/button";
+@import "./components/gnb";
+@import "./layout/space";
+@import "./layout/header";

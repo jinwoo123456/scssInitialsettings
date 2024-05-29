@@ -1,0 +1,6 @@
+$marginTop: (22, 33);
+@each $item in $marginTop {
+  .mt#{$item} {
+    margin-top: $item + px;
+  }
+}

@@ -1,0 +1,10 @@
+.gnb{
+    display: flex;
+    gap:40px;
+    a{
+        color: #000;
+font-size: 14px;
+font-weight: 700;
+line-height: 20px; /* 142.857% */
+    }
+}

@@ -1,0 +1,3 @@
+@mixin background($img, $coordinate) {
+  background: url(#{$imgurl}#{$img}) no-repeat $coordinate;
+}

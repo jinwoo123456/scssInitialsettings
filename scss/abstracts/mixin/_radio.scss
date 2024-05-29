@@ -1,0 +1,19 @@
+@mixin radio($radio) {
+  #{map-get($radio, className)} {
+    display: none;
+    + label {
+      @include background(map-get($radio, radioOffImage), left);
+      display: inline-flex;
+      height: map-get($radio, height);
+      color: map-get($radio, radioOffTextColor);
+      padding-left: map-get($radio, paddingLeft);
+      font-size: map-get($radio, fontSize);
+    }
+    &:checked {
+      + label {
+        @include background(map-get($radio, radioOnImage), left);
+        color: map-get($radio, radioOnTextColor);
+      }
+    }
+  }
+}

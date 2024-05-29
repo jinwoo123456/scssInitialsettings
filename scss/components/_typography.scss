@@ -1,0 +1,19 @@
+//전체 폰트정의
+html,
+body{
+  font-family: "Manrope", sans-serif;
+}
+
+
+
+
+// 제목정의
+$heading: base #000 45px 300, sm #000 35px 300;
+
+@each $class, $color, $fontSize, $fontWeight in $heading {
+  .heading-#{$class} {
+    color: $color;
+    font-size: $fontSize;
+    font-weight: $fontWeight;
+  }
+}
